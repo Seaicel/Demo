@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PrivacyViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,12 +15,32 @@
 @implementation AppDelegate
 
 
+- (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize
+{
+    UIGraphicsBeginImageContext(CGSizeMake(reSize.width, reSize.height));
+    [image drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return [reSizeImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGRect winFrame = [[UIScreen mainScreen] bounds];
+    UIWindow *theWindow = [[UIWindow alloc] initWithFrame:winFrame];
+    self.window = theWindow;
+    //self.window.backgroundColor = [UIColor blueColor];
+    
+    PrivacyViewController *vc = [[PrivacyViewController alloc] init];
+    UINavigationController *naviVc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = naviVc;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
-
+/*
 #pragma mark - UISceneSession lifecycle
 
 
@@ -36,5 +57,5 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
-
+*/
 @end

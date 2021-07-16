@@ -1,22 +1,30 @@
 //
-//  ViewController.m
+//  PrivacyViewController.m
 //  Demo
 //
-//  Created by bytedance on 2021/7/14.
+//  Created by bytedance on 2021/7/15.
 //
 
-#import "ViewController.h"
+#import "PrivacyViewController.h"
+#import "DownloadsViewController.h"
+#import "CommentViewController.h"
+#import "DuetViewController.h"
+#import "StitchViewController.h"
+#import "LikedVideoViewController.h"
+#import "DirectMessageViewController.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface PrivacyViewController ()
+    <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *optionTable;
 @property (nonatomic, strong) NSMutableArray *optionTableData;
 
 @end
 
-@implementation ViewController
+@implementation PrivacyViewController
 
-- (void)optionTableInit {
+- (instancetype)init {
+    self = [super init];
     NSMutableArray *a = [[NSMutableArray alloc] init];
     self.optionTableData = a;
     for (int i = 0; i < 7; i++){
@@ -48,26 +56,23 @@
         }
         NSLog(@"%@", self.optionTableData);
     }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self optionTableInit];  //table数据初始化
     
-    //title
     self.navigationItem.title = @"Privacy";
     [self.navigationController.navigationBar setTitleTextAttributes:
     @{NSFontAttributeName:[UIFont fontWithName:@"Arial-BoldMT" size:17],
     NSForegroundColorAttributeName:[UIColor blackColor]}];
-//    [self.navigationController.navigationBar setTitleTextAttributes:
-//    @{NSFontAttributeName:[UIFont fontWithName:@"Proxima Nova" size:17],
-//    NSForegroundColorAttributeName:[UIColor blackColor]}];
-    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     //左边返回键
     UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"Path 13 Copy 2"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStyleDone target:self action:nil];
     self.navigationItem.leftBarButtonItem = left;
-    self.navigationController.navigationBar.tintColor = [UIColor clearColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.backItem.title = @"wevbr";
+    //self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent =NO;
     
     //table设置
@@ -80,21 +85,16 @@
     [self.view addSubview:self.optionTable];
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.optionTableData.count;
 }
-
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-//{
-//    return @"Safety";
-//}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -112,7 +112,33 @@
     return 41;
 }
 
-#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            [self.navigationController pushViewController:[[DownloadsViewController alloc] init] animated:YES];
+            break;
+        case 1:
+            [self.navigationController pushViewController:[[CommentViewController alloc] init] animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[[DuetViewController alloc] init] animated:YES];
+            break;
+        case 3:
+            [self.navigationController pushViewController:[[StitchViewController alloc] init] animated:YES];
+            break;
+        case 4:
+            [self.navigationController pushViewController:[[LikedVideoViewController alloc] init] animated:YES];
+            break;
+        case 5:
+            [self.navigationController pushViewController:[[DirectMessageViewController alloc] init] animated:YES];
+            break;
+        default:
+            break;
+    }
+}
+
+#pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -152,6 +178,5 @@
     
     return c;
 }
-
 
 @end

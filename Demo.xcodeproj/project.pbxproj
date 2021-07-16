@@ -8,27 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		2BDC3D5D269E863D00963F76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D5C269E863D00963F76 /* AppDelegate.m */; };
-		2BDC3D60269E863D00963F76 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D5F269E863D00963F76 /* SceneDelegate.m */; };
 		2BDC3D63269E863D00963F76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D62269E863D00963F76 /* ViewController.m */; };
-		2BDC3D66269E863D00963F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D64269E863D00963F76 /* Main.storyboard */; };
 		2BDC3D68269E864000963F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D67269E864000963F76 /* Assets.xcassets */; };
 		2BDC3D6B269E864000963F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D69269E864000963F76 /* LaunchScreen.storyboard */; };
 		2BDC3D6E269E864000963F76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D6D269E864000963F76 /* main.m */; };
+		2BDC3D75269E93C000963F76 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D74269E93C000963F76 /* images.bundle */; };
+		2BDC3D9F26A0419900963F76 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D9E26A0419900963F76 /* PrivacyViewController.m */; };
+		2BDC3DA226A0461800963F76 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DA126A0461800963F76 /* CommentViewController.m */; };
+		2BDC3DA526A046B400963F76 /* DuetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DA426A046B400963F76 /* DuetViewController.m */; };
+		2BDC3DA826A046C900963F76 /* StitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DA726A046C900963F76 /* StitchViewController.m */; };
+		2BDC3DAB26A046E400963F76 /* LikedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DAA26A046E400963F76 /* LikedVideoViewController.m */; };
+		2BDC3DAE26A046FB00963F76 /* DirectMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DAD26A046FB00963F76 /* DirectMessageViewController.m */; };
+		2BDC3DB126A0488D00963F76 /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */; };
+		2BDC3DB726A1260800963F76 /* PrivacySetDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BDC3D58269E863D00963F76 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDC3D5B269E863D00963F76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BDC3D5C269E863D00963F76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BDC3D5E269E863D00963F76 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		2BDC3D5F269E863D00963F76 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		2BDC3D61269E863D00963F76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2BDC3D62269E863D00963F76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2BDC3D65269E863D00963F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BDC3D67269E864000963F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BDC3D6A269E864000963F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BDC3D6C269E864000963F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BDC3D6D269E864000963F76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BDC3D74269E93C000963F76 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		2BDC3D76269EF79100963F76 /* proximanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = proximanova.ttf; path = ../../../Downloads/font445/proximanova.ttf; sourceTree = "<group>"; };
+		2BDC3D9D26A0419900963F76 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		2BDC3D9E26A0419900963F76 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		2BDC3DA026A0461800963F76 /* CommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		2BDC3DA126A0461800963F76 /* CommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		2BDC3DA326A046B400963F76 /* DuetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuetViewController.h; sourceTree = "<group>"; };
+		2BDC3DA426A046B400963F76 /* DuetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuetViewController.m; sourceTree = "<group>"; };
+		2BDC3DA626A046C900963F76 /* StitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StitchViewController.h; sourceTree = "<group>"; };
+		2BDC3DA726A046C900963F76 /* StitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StitchViewController.m; sourceTree = "<group>"; };
+		2BDC3DA926A046E400963F76 /* LikedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikedVideoViewController.h; sourceTree = "<group>"; };
+		2BDC3DAA26A046E400963F76 /* LikedVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikedVideoViewController.m; sourceTree = "<group>"; };
+		2BDC3DAC26A046FB00963F76 /* DirectMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectMessageViewController.h; sourceTree = "<group>"; };
+		2BDC3DAD26A046FB00963F76 /* DirectMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectMessageViewController.m; sourceTree = "<group>"; };
+		2BDC3DAF26A0488D00963F76 /* DownloadsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsViewController.h; sourceTree = "<group>"; };
+		2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsViewController.m; sourceTree = "<group>"; };
+		2BDC3DB526A1260800963F76 /* PrivacySetDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacySetDescription.h; sourceTree = "<group>"; };
+		2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacySetDescription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +85,26 @@
 			children = (
 				2BDC3D5B269E863D00963F76 /* AppDelegate.h */,
 				2BDC3D5C269E863D00963F76 /* AppDelegate.m */,
-				2BDC3D5E269E863D00963F76 /* SceneDelegate.h */,
-				2BDC3D5F269E863D00963F76 /* SceneDelegate.m */,
+				2BDC3D74269E93C000963F76 /* images.bundle */,
 				2BDC3D61269E863D00963F76 /* ViewController.h */,
+				2BDC3D9D26A0419900963F76 /* PrivacyViewController.h */,
+				2BDC3D9E26A0419900963F76 /* PrivacyViewController.m */,
+				2BDC3DB526A1260800963F76 /* PrivacySetDescription.h */,
+				2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */,
+				2BDC3DA026A0461800963F76 /* CommentViewController.h */,
+				2BDC3D76269EF79100963F76 /* proximanova.ttf */,
+				2BDC3DA326A046B400963F76 /* DuetViewController.h */,
+				2BDC3DA426A046B400963F76 /* DuetViewController.m */,
+				2BDC3DA626A046C900963F76 /* StitchViewController.h */,
+				2BDC3DA726A046C900963F76 /* StitchViewController.m */,
+				2BDC3DA926A046E400963F76 /* LikedVideoViewController.h */,
+				2BDC3DAA26A046E400963F76 /* LikedVideoViewController.m */,
+				2BDC3DAC26A046FB00963F76 /* DirectMessageViewController.h */,
+				2BDC3DAD26A046FB00963F76 /* DirectMessageViewController.m */,
+				2BDC3DAF26A0488D00963F76 /* DownloadsViewController.h */,
+				2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */,
+				2BDC3DA126A0461800963F76 /* CommentViewController.m */,
 				2BDC3D62269E863D00963F76 /* ViewController.m */,
-				2BDC3D64269E863D00963F76 /* Main.storyboard */,
 				2BDC3D67269E864000963F76 /* Assets.xcassets */,
 				2BDC3D69269E864000963F76 /* LaunchScreen.storyboard */,
 				2BDC3D6C269E864000963F76 /* Info.plist */,
@@ -133,8 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BDC3D6B269E864000963F76 /* LaunchScreen.storyboard in Resources */,
+				2BDC3D75269E93C000963F76 /* images.bundle in Resources */,
 				2BDC3D68269E864000963F76 /* Assets.xcassets in Resources */,
-				2BDC3D66269E863D00963F76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,22 +184,21 @@
 			files = (
 				2BDC3D63269E863D00963F76 /* ViewController.m in Sources */,
 				2BDC3D5D269E863D00963F76 /* AppDelegate.m in Sources */,
+				2BDC3DA526A046B400963F76 /* DuetViewController.m in Sources */,
+				2BDC3DA826A046C900963F76 /* StitchViewController.m in Sources */,
+				2BDC3DB726A1260800963F76 /* PrivacySetDescription.m in Sources */,
+				2BDC3DAB26A046E400963F76 /* LikedVideoViewController.m in Sources */,
 				2BDC3D6E269E864000963F76 /* main.m in Sources */,
-				2BDC3D60269E863D00963F76 /* SceneDelegate.m in Sources */,
+				2BDC3DAE26A046FB00963F76 /* DirectMessageViewController.m in Sources */,
+				2BDC3DA226A0461800963F76 /* CommentViewController.m in Sources */,
+				2BDC3DB126A0488D00963F76 /* DownloadsViewController.m in Sources */,
+				2BDC3D9F26A0419900963F76 /* PrivacyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2BDC3D64269E863D00963F76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BDC3D65269E863D00963F76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2BDC3D69269E864000963F76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
