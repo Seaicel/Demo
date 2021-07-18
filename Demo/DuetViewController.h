@@ -6,10 +6,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DuetViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol DuetViewControllerDelegate <NSObject>
+
+- (void)duetChangeState:(DuetViewController *)controller;
+
+@end;
+
 @interface DuetViewController : UIViewController
+
+@property (nonatomic, weak) id <DuetViewControllerDelegate> delegate;
 
 @end
 

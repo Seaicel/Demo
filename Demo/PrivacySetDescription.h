@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface PrivacySetDescription : NSObject
 
 @property (nonatomic, strong) NSString *icon;

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2BDC3D5D269E863D00963F76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D5C269E863D00963F76 /* AppDelegate.m */; };
-		2BDC3D63269E863D00963F76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D62269E863D00963F76 /* ViewController.m */; };
 		2BDC3D68269E864000963F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D67269E864000963F76 /* Assets.xcassets */; };
 		2BDC3D6B269E864000963F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3D69269E864000963F76 /* LaunchScreen.storyboard */; };
 		2BDC3D6E269E864000963F76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3D6D269E864000963F76 /* main.m */; };
@@ -21,14 +20,14 @@
 		2BDC3DAE26A046FB00963F76 /* DirectMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DAD26A046FB00963F76 /* DirectMessageViewController.m */; };
 		2BDC3DB126A0488D00963F76 /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */; };
 		2BDC3DB726A1260800963F76 /* PrivacySetDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */; };
+		2BDC3DBE26A15D9200963F76 /* BlockedAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3DBD26A15D9200963F76 /* BlockedAccountsViewController.m */; };
+		2BDC3DC026A17B4D00963F76 /* State.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC3DBF26A17B4C00963F76 /* State.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BDC3D58269E863D00963F76 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDC3D5B269E863D00963F76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BDC3D5C269E863D00963F76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BDC3D61269E863D00963F76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BDC3D62269E863D00963F76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BDC3D67269E864000963F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BDC3D6A269E864000963F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BDC3D6C269E864000963F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsViewController.m; sourceTree = "<group>"; };
 		2BDC3DB526A1260800963F76 /* PrivacySetDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacySetDescription.h; sourceTree = "<group>"; };
 		2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacySetDescription.m; sourceTree = "<group>"; };
+		2BDC3DBC26A15D9200963F76 /* BlockedAccountsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockedAccountsViewController.h; sourceTree = "<group>"; };
+		2BDC3DBD26A15D9200963F76 /* BlockedAccountsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockedAccountsViewController.m; sourceTree = "<group>"; };
+		2BDC3DBF26A17B4C00963F76 /* State.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = State.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +88,11 @@
 				2BDC3D5B269E863D00963F76 /* AppDelegate.h */,
 				2BDC3D5C269E863D00963F76 /* AppDelegate.m */,
 				2BDC3D74269E93C000963F76 /* images.bundle */,
-				2BDC3D61269E863D00963F76 /* ViewController.h */,
 				2BDC3D9D26A0419900963F76 /* PrivacyViewController.h */,
+				2BDC3DBC26A15D9200963F76 /* BlockedAccountsViewController.h */,
+				2BDC3DBD26A15D9200963F76 /* BlockedAccountsViewController.m */,
 				2BDC3D9E26A0419900963F76 /* PrivacyViewController.m */,
+				2BDC3DBF26A17B4C00963F76 /* State.plist */,
 				2BDC3DB526A1260800963F76 /* PrivacySetDescription.h */,
 				2BDC3DB626A1260800963F76 /* PrivacySetDescription.m */,
 				2BDC3DA026A0461800963F76 /* CommentViewController.h */,
@@ -104,7 +108,6 @@
 				2BDC3DAF26A0488D00963F76 /* DownloadsViewController.h */,
 				2BDC3DB026A0488D00963F76 /* DownloadsViewController.m */,
 				2BDC3DA126A0461800963F76 /* CommentViewController.m */,
-				2BDC3D62269E863D00963F76 /* ViewController.m */,
 				2BDC3D67269E864000963F76 /* Assets.xcassets */,
 				2BDC3D69269E864000963F76 /* LaunchScreen.storyboard */,
 				2BDC3D6C269E864000963F76 /* Info.plist */,
@@ -171,6 +174,7 @@
 			files = (
 				2BDC3D6B269E864000963F76 /* LaunchScreen.storyboard in Resources */,
 				2BDC3D75269E93C000963F76 /* images.bundle in Resources */,
+				2BDC3DC026A17B4D00963F76 /* State.plist in Resources */,
 				2BDC3D68269E864000963F76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BDC3D63269E863D00963F76 /* ViewController.m in Sources */,
+				2BDC3DBE26A15D9200963F76 /* BlockedAccountsViewController.m in Sources */,
 				2BDC3D5D269E863D00963F76 /* AppDelegate.m in Sources */,
 				2BDC3DA526A046B400963F76 /* DuetViewController.m in Sources */,
 				2BDC3DA826A046C900963F76 /* StitchViewController.m in Sources */,
